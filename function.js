@@ -1,5 +1,5 @@
-const profilePictureInput = document.getElementById('profile-picture-input');
-profilePictureInput.addEventListener('change', handleProfilePictureUpload);
+//const profilePictureInput = document.getElementById('profile-picture-input');
+//profilePictureInput.addEventListener('change', handleProfilePictureUpload);
 
 function handleProfilePictureUpload(event) {
   const file = event.target.files[0];
