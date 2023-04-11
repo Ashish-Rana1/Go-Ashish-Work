@@ -1,11 +1,15 @@
- <style>
-      #profile-picture-preview {
+.profile-picture-preview {
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 20px;
+        height: 20px;
         object-fit: cover;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 9999;
       }
-    </style>
+    
+    
 
 /* Reset styles */
 * {
