@@ -10,7 +10,17 @@
 <body>
 	 <input type="file" id="profile-picture-input" onchange="handleProfilePictureUpload(event)">
     <img id="profile-picture-preview" alt="Profile Picture Preview">
-    <script src="script.js"></script>
+    <script>
+      function handleProfilePictureUpload(event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        reader.addEventListener('load', () => {
+          const profilePicturePreview = document.getElementById('profile-picture-preview');
+          profilePicturePreview.src = reader.result;
+        });
+        reader.readAsDataURL(file);
+      }
+    </script>
 	
 	<header>
 		<h1>Ashish Rana</h1>
