@@ -1,13 +1,16 @@
-.profile-picture-preview {
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        object-fit: cover;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 9999;
-      }
+#profile-picture-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  border: 2px solid #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
     
     
 
